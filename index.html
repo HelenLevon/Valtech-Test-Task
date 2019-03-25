@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link id="favicon" rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="header__container__inner transition">
+                <div class="container">
+                    <div class="header__logo">
+                        <svg width="202" height="42" viewBox="0 0 202 42" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.1922 40.5841H10.8635L0 10.5084H8.87184L15.1183 32.6122H15.2089L21.6364 10.5084H30.0556L19.1922 40.5841Z"
+                                fill="black" />
+                            <path
+                                d="M56.3996 34.6957C56.3996 38.2287 57.2143 39.044 58.1196 39.4063V40.584H49.5194C49.0667 39.1346 48.9762 38.6816 48.7952 37.051C46.9846 38.9534 44.4498 41.3993 39.018 41.3993C34.4916 41.3993 29.8746 38.8628 29.8746 32.6121C29.8746 26.7238 33.5863 23.7343 38.6559 23.0096L45.8077 21.9225C47.0751 21.7414 48.6141 21.1978 48.6141 19.5672C48.6141 16.2154 45.4456 16.0342 43.3634 16.0342C39.3801 16.0342 38.7464 18.4801 38.4748 20.2013H30.7799C31.6852 10.9612 38.1127 9.69299 44.2687 9.69299C48.5236 9.69299 56.3091 10.9612 56.3091 18.3896V34.6957H56.3996ZM48.6141 25.9085C47.7993 26.5426 46.5319 26.9956 43.2729 27.5391C40.2854 28.0826 37.8411 28.8073 37.8411 32.0686C37.8411 34.8769 40.0138 35.6922 41.5528 35.6922C45.0835 35.6922 48.6141 33.4274 48.6141 29.8038V25.9085Z"
+                                fill="black" />
+                            <path d="M69.0737 40.5841H61.1071V0H69.0737V40.5841Z" fill="black" />
+                            <path
+                                d="M84.192 10.5084H89.0806V16.1249H84.192V32.4311C84.192 34.1523 84.2825 34.877 87.451 34.877C87.9942 34.877 88.5374 34.7864 89.0806 34.7864V40.7653C87.8132 40.8559 86.5458 40.8559 85.3689 40.8559H84.3731C77.4929 40.8559 76.2254 38.2288 76.2254 34.3335V16.1249H72.1516V10.5084H76.2254V2.35535H84.192V10.5084Z"
+                                fill="black" />
+                            <path
+                                d="M120.041 31.7062C117.959 38.9534 111.894 41.3087 106.734 41.3087C98.224 41.3087 91.7059 37.2322 91.7059 24.912C91.7059 21.2884 92.9733 9.69299 106.191 9.69299C112.165 9.69299 120.404 12.5012 120.404 26.2708V27.7203H99.6724C99.8535 29.985 100.397 35.058 106.734 35.058C108.906 35.058 111.17 33.8804 111.803 31.7968H120.041V31.7062ZM112.256 22.5567C111.803 17.6648 108.725 16.2154 106.1 16.2154C102.388 16.2154 100.397 18.5707 99.944 22.5567H112.256Z"
+                                fill="black" />
+                            <path
+                                d="M150.188 29.6228C149.916 32.7028 147.472 41.3994 136.427 41.3994C125.111 41.3994 122.486 32.7934 122.486 26.4521C122.486 16.7591 126.741 9.78369 136.97 9.78369C141.768 9.78369 149.554 11.9578 150.278 21.2885H142.221C141.859 19.3862 140.773 16.3967 137.333 16.3967H136.97C131.991 16.3967 130.633 21.3791 130.633 25.0933C130.633 28.3545 130.724 34.877 136.789 34.877C140.863 34.877 142.221 31.0722 142.221 29.6228H150.188Z"
+                                fill="black" />
+                            <path
+                                d="M181.058 40.5841H173.091V22.285C173.091 20.1109 173.001 16.3967 167.931 16.3967C164.401 16.3967 161.685 18.752 161.685 23.3721V40.5841H153.718V0H161.685V14.4037H161.775C162.771 11.9578 166.211 9.69308 170.466 9.69308C176.351 9.69308 180.968 13.1355 180.968 19.7485V40.5841H181.058Z"
+                                fill="black" />
+                            <path d="M201.88 34.877H186.037V40.4935H201.88V34.877Z" fill="black" />
+                        </svg>
+                    </div>
+                    <div class="topnav header__menu" id="Topnav">
+                        <ul class="header__menu__list ">
+                            <li class="header__menu__item pointer"><a href="#" class="services">Services</a></li>
+                            <li class="header__menu__item pointer"><a href="#" class="clients"> Clients </a></li>
+                            <li class="header__menu__item pointer"><a href="#" class="team">Our team </a></li>
+                            <li class="header__menu__item pointer"><a href="#" class="app">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__header">We're an international development agency.</h1>
+                <p class="hero__slogan">
+                    We understand the intricacies of web development inside-out. That's why we build rock-solid Mobile
+                    and Web applications enriched
+                    with user-centered visual experiences.
+                </p>
+                <a class="active hero__button pointer" href="#">Contact Us</a>
+            </div>
+        </section>
+
+        <div class="line" id="services">
+            <hr>
+            <div class="line__text">
+                OUR SERVICES
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+                <div class="row-flex">
+                    <div class="column-50 ">
+
+                        <a class="overlay transition pointer" href="#app">
+                            <div class="row-flex">
+                                <div class="column-30">
+                                    <img src="img/services/smartphone.svg" alt="service">
+                                </div>
+                                <div class="column-70">
+                                    <p class="services__title">Mobile Development</p>
+                                    <p class="services__text">We develop mobile apps for all contemporary
+                                        mobile platforms. Mamon team builds
+                                        native and cross-platform solutions.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column-50">
+                        <a class="overlay transition pointer" href="#app">
+                            <div class="row-flex">
+                                <div class="column-30">
+                                    <img src="img/services/monitor.svg" alt="service">
+                                </div>
+                                <div class="column-70">
+                                    <p class="services__title">Web Development</p>
+                                    <p class="services__text">Mamon offers full range of services from various
+                                        CMS and frameworks based websites to complex
+                                        ERP/CRM solutions and e-commerce stores.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row-flex">
+                    <div class="column-50 ">
+                        <a class="overlay transition pointer" href="#app">
+                            <div class="row-flex">
+                                <div class="column-30">
+                                    <img src="img/services/layers.svg" alt="service">
+                                </div>
+                                <div class="column-70">
+                                    <p class="services__title">Product Design</p>
+                                    <p class="services__text">We create design given the product audience,
+                                        goal, business domain, technology and
+                                        the platform for the solution.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column-50">
+                        <a class="overlay transition pointer" href="#app">
+                            <div class="row-flex">
+                                <div class="column-30">
+                                    <img src="img/services/test.svg" alt="service">
+                                </div>
+                                <div class="column-70">
+                                    <p class="services__title">Quality Assurance</p>
+                                    <p class="services__text">Our QA team ensures high standard of
+                                        quality of products delivered.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="line" id="clients">
+            <hr>
+            <div class="line__text">
+                OUR CLIENTS
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+                <div class="row-flex">
+                    <div class="column-25 jc-center">
+                        <a href="#">
+                            <img src="img/clients/logo-lightspeed.svg" alt="client" class="centered filter-black">
+                        </a>
+                    </div>
+                    <div class="column-25 jc-center">
+                        <a href="#">
+                            <img src="img/clients/logo-trvl.svg" alt="client"
+                                class="centered  filter-gray filter-black">
+                        </a>
+                    </div>
+                    <div class="column-25 jc-center">
+                        <a href="#">
+                            <img src="img/clients/logo-spider-strategies.svg" alt="client"
+                                class="centered filter-black">
+                        </a>
+                    </div>
+                    <div class="column-25 jc-center">
+                        <a href="#">
+                            <img src="img/clients/logo-tripadvisor.svg" alt="client" class="centered filter-black">
+                        </a>
+                    </div>
+                </div>
+                <div class="row-flex">
+                    <div class="column-25 jc-center">
+                        <a href="#">
+                            <img src="img/clients/logo-shutterfly.svg" alt="client" class="centered filter-black">
+                        </a>
+                    </div>
+
+                    <div class="column-25 jc-center">
+                        <a href="#">
+                            <img src="img/clients/logo-decos.svg" alt="client" class="centered filter-black">
+                        </a>
+                    </div>
+
+                    <div class="column-25 jc-center">
+                        <a href="#">
+                            <img src="img/clients/logo-tiqets.svg" alt="client" class="centered filter-black">
+                        </a>
+                    </div>
+
+                    <div class="column-25 jc-center">
+                        <a href="#">
+                            <img src="img/clients/logo-hotelchamp.svg" alt="client" class="centered filter-black">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row-flex">
+                    <div class="column-25 jc-center">
+                        <a href="#">
+                            <img src="img/clients/logo-flitsmeister.svg" alt="client" class="centered filter-black">
+                        </a>
+                    </div>
+                    <div class="column-25 jc-center">
+                        <a href="#">
+                            <img src="img/clients/logo-sap.svg" alt="client" class="centered filter-black">
+                        </a>
+                    </div>
+                    <div class="column-25 jc-center">
+                        <a href="#">
+                            <img src="img/clients/logo-redkix.svg" alt="client" class="centered filter-black">
+                        </a>
+                    </div>
+                    <div class="column-25 jc-center">
+                        <a href="#">
+                            <img src="img/clients/logo-nos.svg" alt="client" class="centered filter-black">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="line" id="team">
+            <hr>
+            <div class="line__text">
+                OUR TEAM
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+                <div class="row-flex">
+                    <div class="column-33">
+                        <div class="column-30">
+                            <img src="img/team/vadim.svg" alt="person">
+                        </div>
+                        <div class="column-70">
+                            <p class="team__title">Nina</p>
+                            <p class="team__text">Team Manager</p>
+                        </div>
+                    </div>
+                    <div class="column-33">
+                        <div class="column-30">
+                            <img src="img/team/sergey.svg" alt="person">
+                        </div>
+                        <div class="column-70">
+                            <p class="team__title">Tizzy</p>
+                            <p class="team__text">Front-end Developer</p>
+                        </div>
+                    </div>
+                    <div class="column-33">
+                        <div class="column-30">
+                            <img src="img/team/andrey.svg" alt="person">
+                        </div>
+                        <div class="column-70">
+                            <p class="team__title">Tom</p>
+                            <p class="team__text">QA Automation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-flex">
+                    <div class="column-33">
+                        <div class="column-30">
+                            <img src="img/team/alex.svg" alt="person">
+                        </div>
+                        <div class="column-70">
+                            <p class="team__title">Alex</p>
+                            <p class="team__text">Front-end Developer</p>
+                        </div>
+                    </div>
+                    <div class="column-33">
+                        <div class="column-30">
+                            <img src="img/team/agne.svg" alt="person">
+                        </div>
+                        <div class="column-70">
+                            <p class="team__title">Thomas</p>
+                            <p class="team__text">Mobile Developer</p>
+                        </div>
+                    </div>
+                    <div class="column-33">
+                        <div class="column-30">
+                            <img src="img/team/dzima.svg" alt="person">
+                        </div>
+                        <div class="column-70">
+                            <p class="team__title">Claire</p>
+                            <p class="team__text">Back-end Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-flex">
+                    <div class="column-33">
+                        <div class="column-30">
+                            <img src="img/team/Artyom.svg" alt="person">
+                        </div>
+                        <div class="column-70">
+                            <p class="team__title">Stiven</p>
+                            <p class="team__text">Back-end Developer</p>
+                        </div>
+                    </div>
+                    <div class="column-33">
+                        <div class="column-30">
+                            <img src="img/team/Evgeny.svg" alt="person">
+                        </div>
+                        <div class="column-70">
+                            <p class="team__title">Anna-Marie</p>
+                            <p class="team__text">Product Designer</p>
+                        </div>
+                    </div>
+                    <div class="column-33">
+                        <div class="column-30">
+                            <img src="img/team/tom.svg" alt="person">
+                        </div>
+                        <div class="column-70">
+                            <p class="team__title">Ernst</p>
+                            <p class="team__text">Back-end Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__logo">
+                    <svg width="202" height="42" viewBox="0 0 202 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.1922 40.5841H10.8635L0 10.5084H8.87184L15.1183 32.6122H15.2089L21.6364 10.5084H30.0556L19.1922 40.5841Z"
+                            fill="black" />
+                        <path
+                            d="M56.3996 34.6957C56.3996 38.2287 57.2143 39.044 58.1196 39.4063V40.584H49.5194C49.0667 39.1346 48.9762 38.6816 48.7952 37.051C46.9846 38.9534 44.4498 41.3993 39.018 41.3993C34.4916 41.3993 29.8746 38.8628 29.8746 32.6121C29.8746 26.7238 33.5863 23.7343 38.6559 23.0096L45.8077 21.9225C47.0751 21.7414 48.6141 21.1978 48.6141 19.5672C48.6141 16.2154 45.4456 16.0342 43.3634 16.0342C39.3801 16.0342 38.7464 18.4801 38.4748 20.2013H30.7799C31.6852 10.9612 38.1127 9.69299 44.2687 9.69299C48.5236 9.69299 56.3091 10.9612 56.3091 18.3896V34.6957H56.3996ZM48.6141 25.9085C47.7993 26.5426 46.5319 26.9956 43.2729 27.5391C40.2854 28.0826 37.8411 28.8073 37.8411 32.0686C37.8411 34.8769 40.0138 35.6922 41.5528 35.6922C45.0835 35.6922 48.6141 33.4274 48.6141 29.8038V25.9085Z"
+                            fill="black" />
+                        <path d="M69.0737 40.5841H61.1071V0H69.0737V40.5841Z" fill="black" />
+                        <path
+                            d="M84.192 10.5084H89.0806V16.1249H84.192V32.4311C84.192 34.1523 84.2825 34.877 87.451 34.877C87.9942 34.877 88.5374 34.7864 89.0806 34.7864V40.7653C87.8132 40.8559 86.5458 40.8559 85.3689 40.8559H84.3731C77.4929 40.8559 76.2254 38.2288 76.2254 34.3335V16.1249H72.1516V10.5084H76.2254V2.35535H84.192V10.5084Z"
+                            fill="black" />
+                        <path
+                            d="M120.041 31.7062C117.959 38.9534 111.894 41.3087 106.734 41.3087C98.224 41.3087 91.7059 37.2322 91.7059 24.912C91.7059 21.2884 92.9733 9.69299 106.191 9.69299C112.165 9.69299 120.404 12.5012 120.404 26.2708V27.7203H99.6724C99.8535 29.985 100.397 35.058 106.734 35.058C108.906 35.058 111.17 33.8804 111.803 31.7968H120.041V31.7062ZM112.256 22.5567C111.803 17.6648 108.725 16.2154 106.1 16.2154C102.388 16.2154 100.397 18.5707 99.944 22.5567H112.256Z"
+                            fill="black" />
+                        <path
+                            d="M150.188 29.6228C149.916 32.7028 147.472 41.3994 136.427 41.3994C125.111 41.3994 122.486 32.7934 122.486 26.4521C122.486 16.7591 126.741 9.78369 136.97 9.78369C141.768 9.78369 149.554 11.9578 150.278 21.2885H142.221C141.859 19.3862 140.773 16.3967 137.333 16.3967H136.97C131.991 16.3967 130.633 21.3791 130.633 25.0933C130.633 28.3545 130.724 34.877 136.789 34.877C140.863 34.877 142.221 31.0722 142.221 29.6228H150.188Z"
+                            fill="black" />
+                        <path
+                            d="M181.058 40.5841H173.091V22.285C173.091 20.1109 173.001 16.3967 167.931 16.3967C164.401 16.3967 161.685 18.752 161.685 23.3721V40.5841H153.718V0H161.685V14.4037H161.775C162.771 11.9578 166.211 9.69308 170.466 9.69308C176.351 9.69308 180.968 13.1355 180.968 19.7485V40.5841H181.058Z"
+                            fill="black" />
+                        <path d="M201.88 34.877H186.037V40.4935H201.88V34.877Z" fill="black" />
+                    </svg>
+                </div>
+                <div class="footer__sotial">
+                    <ul class="footer__menu__list">
+                        <li class="footer__menu__item">
+                            <a href="#app"><img src="img/icons/github.svg" class="icon-img" height="26" width="26"
+                                    alt="github"></a>
+                        </li>
+                        <li class="footer__menu__item">
+                            <a href="#app"><img src="img/icons/behance.svg" class="icon-img" height="26" width="26"
+                                    alt="behance"></a>
+                        </li>
+                        <li class="footer__menu__item">
+                            <a href="#app"><img src="img/icons/instagram.svg" class="icon-img" height="26" width="26"
+                                    alt="instagram"></a>
+                        </li>
+                        <li class="footer__menu__item">
+                            <a href="#app"><img src="img/icons/codepen.svg" class="icon-img" height="26" width="26"
+                                    alt="codepen"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
